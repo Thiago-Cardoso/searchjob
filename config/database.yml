@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: searchjob_onebitcode_development
+
+test:
+  <<: *default
+  database: searchjob_onebitcode_test
