@@ -13,6 +13,9 @@ gem 'webpacker'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'jquery-rails'
+gem 'materialize-sass', '~> 1.0.0.rc2'
+gem 'material_icons'
 
 group :test do
   gem "factory_bot_rails"
