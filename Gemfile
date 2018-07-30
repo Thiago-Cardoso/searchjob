@@ -13,6 +13,9 @@ gem 'webpacker'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'nokogiri', '~> 1.8', '>= 1.8.4'
+gem 'httparty', '~> 0.13.7'
+
 
 group :test do
   gem "factory_bot_rails"
