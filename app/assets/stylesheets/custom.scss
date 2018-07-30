@@ -8,6 +8,9 @@ nav {
 	.container {
 		width:90%;
 	}
+	.brand-logo {
+		font-size: 1.5rem;
+	}
 }
 .uppercased {
 	
@@ -16,10 +19,17 @@ nav {
 section#search-index {
 	// background-image: url('code.jpg');
 	background-size:cover;
-	height:	500px;
+	height:	525px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('code.jpg');
     background-position:center top;
     a {
     	color: #eee!important;
     }
+}
+footer {
+	padding: 20px;
+	.row {
+		margin: 0;
+	}
+
 }
