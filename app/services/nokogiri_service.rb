@@ -1,3 +1,4 @@
+## Test using Scraping in IRB Run docker-compose run --rm app bundle exec rails console - require "nokogiri_service" and list jobs (jobs)
 def scraper
     url = "https://blockwork.cc/"
     unparsed_page = HTTParty.get(url)
@@ -15,5 +16,4 @@ def scraper
     end
     byebug
 end
-
 scraper
