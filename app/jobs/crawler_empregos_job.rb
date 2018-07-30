@@ -1,0 +1,2 @@
+class CrawlerEmpregosJob < ApplicationJob
+end
