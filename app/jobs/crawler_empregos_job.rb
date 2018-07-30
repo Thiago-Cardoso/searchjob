@@ -1,2 +1,3 @@
 class CrawlerEmpregosJob < ApplicationJob
+    
 end
