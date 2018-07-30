@@ -1,3 +1,3 @@
-def crawler_empregos()
+def crawler_empregos(page)
     
 end
