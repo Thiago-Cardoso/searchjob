@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'rspec-rails', '~> 3.5'
+gem 'sidekiq'
+
 gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
@@ -13,6 +15,9 @@ gem 'webpacker'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'jquery-rails'
+gem 'materialize-sass', '~> 1.0.0.rc2'
+gem 'material_icons'
 
 group :test do
   gem "factory_bot_rails"

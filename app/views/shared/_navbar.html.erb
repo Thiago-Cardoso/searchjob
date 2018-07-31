@@ -1,0 +1,28 @@
+  <nav class="grey lighten-3">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo indigo-text light"><i class="material-icons">search</i>SearchJob</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="light" href="#">Busca avançada</a></li>
+          <li><%= link_to "Sobre", pages_about_path, class: "light" %></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+          
+<script>
+
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
