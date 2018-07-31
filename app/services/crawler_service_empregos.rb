@@ -15,7 +15,7 @@ class CrawlerServiceEmprego
                 published_at: job_listing.css('span.publicado').text,
                 url:  job_listing.css('a')[0].attributes["href"].value
             }
-        jobs << job
+        jobs << [job]
         end
         #byebug
     end
