@@ -26,6 +26,12 @@ section#search-index {
     	color: #eee!important;
     }
 }
+section#search-results {
+	.card-title {
+		font-size:15px;
+		font-weight: bolder;
+	}
+}
 footer {
 	padding: 20px;
 	.row {
