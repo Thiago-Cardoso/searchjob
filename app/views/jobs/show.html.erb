@@ -1,0 +1,26 @@
+<section id="job-show">
+	<div class="container">
+		<div class= "row">
+			<div class="col s10 offset-s1 m8 offset-m2">
+				
+					
+				<div class="card grey lighten-3 grey-text text-darken-2">
+					<div class="card-content">
+						<span class="card-title"><%=@job.job_title %> </span>
+						<p class="light"><%=@job.job_description %></p>
+						<p class="light"><strong>Empresa: </strong><%=@job.company_name %></p>
+						<p class="light"><strong>Cidade: </strong><%=@job.locale %></p>
+						<p class="light"><strong>Publicada em: </strong><%=@job.published_at %></p>
+					</div>
+					<div class="card-action">
+						<%=link_to "Visitar o site" %>
+						<%=link_to "nova busca", root_path, class: "right" %>
+					</div>
+				</div>
+				
+					
+				
+			</div>	
+		</div>
+	</div>
+</section>
