@@ -1,0 +1,22 @@
+<section id="search-results">
+	<div class="container">
+		<div class= "row">
+			<h4 class="light">Resultados da busca</h4>
+		</div>
+		<div class="row">
+			<% @jobs.each do |job| %>
+				<div class="col s12 m6">
+					<div class="card blue-grey lighten-1">
+						<div class="card-content white-text">
+							<span class="card-title"><%=job.job_title %></span>
+							<p class="light"><%=truncate(job.job_description, 100) %></p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>

@@ -21,10 +21,10 @@ gem 'material_icons'
 
 group :test do
   gem "factory_bot_rails"
-  gem "ffaker"
 end
 
 group :development, :test do
+  gem "ffaker"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
