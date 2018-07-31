@@ -4,7 +4,7 @@ require 'crawler_service_empregos'
 describe "crawler_service_empregos to empregos.com.br with query 'programador ruby'" do
 
     it "crawlerEmpregos returning the first and second job in page" do
-        @page = get_file_as_string("spec/mocks/Empregos.html")
+        @page = get_file_as_string("spec/mocks/empregos.html")
         #The variable page have the html content from Empregos.com.br 
         #from query 'programador ruby'
         @results = CrawlerServiceEmprego.new(@page).crawlerEmpregos
