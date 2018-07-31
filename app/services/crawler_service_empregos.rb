@@ -4,10 +4,19 @@ class CrawlerServiceEmprego
     end
 
     def crawlerEmpregos
-        return [["Desenvolvedor Ruby", 
-        "Atuará no desenvolvimento e deploy de aplicações web AWS e arquitetura de sistemas com base em Ruby on Rails.", 
-        "20/07/2018", 
-        "Grupo Método em TI",
-        "São Paulo - SP"]]
+        parsed_page = Nokogiri::HTML(@page)
+        jobs = Array.new
+        job_listings = parsed_page.css('div.descricao')
+        job_listings.each do |job_listing|
+            job = {
+                title: job_listing.css('a')[0].text,
+                company: job_listing.css('span.nome-empresa').text,
+                location: job_listing.css('span.cidade-estado').text,
+                published_at: job_listing.css('span.publicado').text,
+                url:  job_listing.css('a')[0].attributes["href"].value
+            }
+        jobs << job
+        end
+        #byebug
     end
 end

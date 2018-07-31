@@ -19,12 +19,15 @@ gem 'jquery-rails'
 gem 'materialize-sass', '~> 1.0.0.rc2'
 gem 'material_icons'
 
+gem 'nokogiri', '~> 1.8', '>= 1.8.4'
+gem 'httparty', '~> 0.13.7'
+
 group :test do
   gem "factory_bot_rails"
-  gem "ffaker"
 end
 
 group :development, :test do
+  gem "ffaker"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
