@@ -1,0 +1,16 @@
+<% if flash[:notice] %>
+  <b style="color: green"><%= flash[:notice] %></b>
+<% end %>
+
+<h3>Relatórios</h3>
+
+<% @reports.each do |report| %>
+  <%= link_to(report.split('/').last, "/reports/#{report.split('/').last}", target: "_blank") %>
+  <br>
+<% end %>
+
+<hr>
+
+<%= form_tag("/reports", method: "post") do %>
+  <%= submit_tag("Gerar Novo") %>
+<% end %>
