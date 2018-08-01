@@ -1,0 +1,41 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+nav {
+	a {
+		color: #3f51b5!important;
+	}
+	.container {
+		width:90%;
+	}
+	.brand-logo {
+		font-size: 1.5rem;
+	}
+}
+.uppercased {
+	
+	text-transform: uppercase;
+}
+section#search-index {
+	// background-image: url('code.jpg');
+	background-size:cover;
+	height:	525px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('code.jpg');
+    background-position:center top;
+    a {
+    	color: #eee!important;
+    }
+}
+section#search-results {
+	.card-title {
+		font-size:15px;
+		font-weight: bolder;
+	}
+}
+footer {
+	padding: 20px;
+	.row {
+		margin: 0;
+	}
+
+}
