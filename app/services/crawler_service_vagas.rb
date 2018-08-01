@@ -12,7 +12,7 @@ class CrawlerServiceVagas
         jobs_temp02 = Array.new
 
         #---------------------------------------------------------------------
-        #Parse to get fields title, company and url
+        #Parse to get title, company and url
         job_listings = parsed_page.css('div.informacoes-header')
         #Loop in informacoes-header info
         job_listings.each do |job_listing|
@@ -27,7 +27,7 @@ class CrawlerServiceVagas
         end   
 
         #---------------------------------------------------------------------
-        #Parse to get fields location and published_at
+        #Parse to get location and published_at
         job_listings = parsed_page.css('footer')
     
         #Loop in footer info
@@ -42,7 +42,7 @@ class CrawlerServiceVagas
         end  
 
         #---------------------------------------------------------------------
-        #Parse to get fields description
+        #Parse to get description
         job_listings = parsed_page.css('div.detalhes')
         #loop in div.detalhes info
         job_listings.each do |job_listing|
