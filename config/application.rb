@@ -14,6 +14,7 @@ module DevOneBitCode
     config.generators.helper = false
 
 
+    #config.active_job.queue_adapter = :sidekiq
     config.active_job.queue_adapter = :sidekiq
 
     # Settings in config/environments/* take precedence over those specified here.

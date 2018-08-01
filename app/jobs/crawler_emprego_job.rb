@@ -6,3 +6,4 @@ class CrawlerEmpregoJob < ApplicationJob
     CrawlerServiceEmprego.new(page).crawlerEmpregos
   end
 end
+
