@@ -13,6 +13,8 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'support/read_file_helper'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -93,14 +95,5 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-
-  def get_file_as_string(filename)
-    data = ''
-    f = File.open(filename, "r") 
-    f.each_line do |line|
-      data += line
-    end
-    return data
-  end
 
 end
