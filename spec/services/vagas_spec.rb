@@ -9,22 +9,20 @@ describe "crawler_service_vagas to vagas.com.br with query 'programador ruby'" d
         #from query 'programador ruby'
         @results = CrawlerServiceVagas.new(@page).crawlerVagas
         expect(@results).to eq(
-            # [
-            #     {:title=>"Desenvolvedor Ruby", 
-            #     :company=>"Grupo Método em Ti", 
-            #     :location=>"São Paulo - SP", 
-            #     :published_at=>"Publicado em 20/07/2018", 
-            #     :description=>"Atuará no desenvolvimento e deploy de aplicações web AWS e arquitetura de sistemas com base em Ruby on Rails.", 
-            #     :url=>"https://www.empregos.com.br/vagas/desenvolvedor-ruby/sao-paulo/sp/5600703"
-            #     },
-            #     {:title=>"Analista desenvolvedor especialista Ruby", 
-            #     :company=>"Rakuten", 
-            #     :location=>"São Paulo - SP", 
-            #     :published_at=>"Publicado em 19/07/2018", 
-            #     :description=>"responsável por projetar, construir e manter um código Ruby testável, eficiente, reutilizável e confiável.", 
-            #     :url=>"https://www.empregos.com.br/vagas/analista-desenvolvedor-especialista-ruby/sao-paulo/sp/5654516"
-            #     }
-            # ]
+            [
+                {:title=>"Analista Programador - Ruby", 
+                :company=>"Confidencial", 
+                :url=>"https://www.vagas.com.br/vagas/v1740267/analista-programador-ruby", 
+                :location=>"São Paulo", 
+                :published_at=>"Hoje", 
+                :description=>"Fluência da sintaxe de Ruby e suas nuances; Habilidades para escrever bibliotecas Ruby; Familiaridade com com frameworks de aplicações web populares como Ruby on Rails, Sidekiq, RSpec; Hanami e Sequel será diferencial; métodos ágeis e Extreme Programming; Dif…"},
+                {:title=>"Analista Programador Ruby on Rails", 
+                :company=>"Eicon", 
+                :url=>"https://www.vagas.com.br/vagas/v1694108/analista-programador-ruby-on-rails", 
+                :location=>"São Paulo", 
+                :published_at=>"02/07/2018", 
+                :description=>"projetos, manutenção e evolução de sistemas utilizando Ruby onRails. Analisar, prospectar e desenvolver sistemas Requisitos Necessário: Conhecimento no desenvolvimento Ruby on Tails utilizando MySQL, sistemas operacionais: operacionais: Linux. Experiência nas linguage…"}
+            ]
         )
     end
 end
