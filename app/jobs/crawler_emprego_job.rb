@@ -1,12 +1,12 @@
+require './services/crawler_emprego_service'
 class CrawlerEmpregoJob < ApplicationJob
     queue_as :empregojob
 
     def perform(page)
       #Do something later
       @result = CrawlerServiceEmprego.new(page).crawlerEmpregos
-      puts @result
     end
-    byebug
+    #byebug
     # @result.each do |job|
     #     job.save
     # end
