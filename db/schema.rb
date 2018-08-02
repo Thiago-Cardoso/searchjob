@@ -16,11 +16,12 @@ ActiveRecord::Schema.define(version: 2018_07_31_002240) do
   enable_extension "plpgsql"
 
   create_table "jobs", force: :cascade do |t|
-    t.string "job_title"
-    t.text "job_description"
+    t.string "title"
+    t.string "company"
+    t.string "location"
     t.date "published_at"
-    t.string "company_name"
-    t.string "locale"
+    t.text "description"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
