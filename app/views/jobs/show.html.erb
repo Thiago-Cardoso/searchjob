@@ -6,11 +6,12 @@
 					
 				<div class="card grey lighten-3 grey-text text-darken-2">
 					<div class="card-content">
-						<span class="card-title"><%=@job.job_title %> </span>
-						<p class="light"><%=@job.job_description %></p>
-						<p class="light"><strong>Empresa: </strong><%=@job.company_name %></p>
-						<p class="light"><strong>Cidade: </strong><%=@job.locale %></p>
+						<span class="card-title"><%=@job.title %> </span>
+						<p class="light"><%=@job.description %></p>
+						<p class="light"><strong>Empresa: </strong><%=@job.company %></p>
+						<p class="light"><strong>Cidade: </strong><%=@job.location %></p>
 						<p class="light"><strong>Publicada em: </strong><%=@job.published_at %></p>
+						<p class="light"><strong>WebSite: </strong><%=@job.url %></p>
 					</div>
 					<div class="card-action">
 						<%=link_to "Visite o site" %>

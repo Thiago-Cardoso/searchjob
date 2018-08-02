@@ -8,9 +8,9 @@
 				<div class="col s12 m6">
 					<div class="card grey lighten-2 hoverable">
 						<div class="card-content grey-text text-darken-2">
-							<span class="card-title"><%=job.job_title %></span>
-							<p class="light"><%=truncate(job.job_description, length: 100) %></p>
-							<p>Empresa: <%=job.company_name %>, <%=job.locale %></p>
+							<span class="card-title"><%=job.title %></span>
+							<p class="light"><%=truncate(job.description, length: 100) %></p>
+							<p>Empresa: <%=job.company %>, <%=job.location %></p>
 						</div>
 						<div class="card-action">
 							<%= link_to "Saiba mais...", job_path(job) %>
