@@ -42,7 +42,6 @@ class CrawlerServiceEmprego
         end
     
     #get the first and second job of the page
-    puts
     return jobs.take(2)
         #byebug
     end

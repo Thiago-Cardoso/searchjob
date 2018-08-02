@@ -6,7 +6,7 @@ class CrawlerEmpregoJob < ApplicationJob
       @result = CrawlerServiceEmprego.new(page).crawlerEmpregos
       puts @result
     end
-
+    byebug
     # @result.each do |job|
     #     job.save
     # end
