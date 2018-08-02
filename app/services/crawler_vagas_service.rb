@@ -1,9 +1,9 @@
-class CrawlerServiceVagas
+class CrawlerVagasServices
     def initialize(page)
         @page = page
     end
 
-    def crawlerVagas
+    def call
         parsed_page = Nokogiri::HTML(@page)
         jobs = Array.new
 

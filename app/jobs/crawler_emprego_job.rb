@@ -3,9 +3,10 @@ class CrawlerEmpregoJob < ApplicationJob
 
     def perform(page)
       #Do something later
-      @result = CrawlerServiceEmprego.new(page).crawlerEmpregos
+      @result = CrawlerEmpregoService.new(page).call
+      byebug
     end
-    #byebug
+    
     # @result.each do |job|
     #     job.save
     # end
