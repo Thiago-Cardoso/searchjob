@@ -16,7 +16,8 @@ class CrawlerServiceEmprego
                 description: job_listing.css('p')[0].text,
                 url:  job_listing.css('a')[0].attributes["href"].value
             }
-            byebug
+            #byebug
+            
         #formating the rigth way the job hash before insert in array of hashs jobs
 
         #Clean the description text take away unnecessary spaces and \n characters
@@ -41,8 +42,8 @@ class CrawlerServiceEmprego
         end
     
     #get the first and second job of the page
+    puts
     return jobs.take(2)
-
-        byebug
+        #byebug
     end
 end

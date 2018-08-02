@@ -1,9 +1,14 @@
 class CrawlerEmpregoJob < ApplicationJob
-  queue_as :empregojob
+    queue_as :empregojob
 
-  def perform(page)
-    # Do something later
-    CrawlerServiceEmprego.new(page).crawlerEmpregos
-  end
+    def perform(page)
+      #Do something later
+      @result = CrawlerServiceEmprego.new(page).crawlerEmpregos
+      puts @result
+    end
+
+    # @result.each do |job|
+    #     job.save
+    # end
+
 end
-
