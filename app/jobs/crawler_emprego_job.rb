@@ -1,4 +1,3 @@
-require './services/crawler_emprego_service'
 class CrawlerEmpregoJob < ApplicationJob
     queue_as :empregojob
 

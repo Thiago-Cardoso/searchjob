@@ -1,5 +1,4 @@
 require './spec/support/read_file_helper'
-require './jobs/crawler_emprego_job'
 class PagesController < ApplicationController
   
   def home
