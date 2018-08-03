@@ -38,11 +38,19 @@ class CrawlerEmpregoService
         job[:url] = job.values[5]
 
         #Add job hash to jobs array of hashs
-        jobs << job
+        @jobs = job
+
+        #percorre e salva no bd
+        @jobs.each do |job|
+          #  job.save
+            puts job.title
+           #job.save
         end
+        #byebug
+    end
     
     #get the first and second job of the page
-    return jobs.take(2)
-        #byebug
+    #return jobs.take(2)
+        #
     end
 end

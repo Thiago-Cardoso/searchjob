@@ -1,4 +1,4 @@
-class CrawlerVagasServices
+class CrawlerVagaService
     def initialize(page)
         @page = page
     end
