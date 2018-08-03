@@ -4,11 +4,12 @@ class JobsController < ApplicationController
 		@jobs = Job.all
 	end
 	def show
-	end
+end
+
 
 
 	private
-	
+
 		def set_job
 			@job = Job.find(params[:id])
 		end

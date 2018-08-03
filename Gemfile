@@ -6,6 +6,8 @@ ruby '2.5.1'
 gem 'rspec-rails', '~> 3.5'
 gem 'sidekiq'
 gem 'redis'
+# Pesquisas dentro do Postgresql
+gem 'pg_search'
 
 gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
