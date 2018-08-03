@@ -61,6 +61,8 @@ class CrawlerVagaService
             job.merge!(jobs_temp01[idx])
             job.merge!(jobs_temp02[idx])
         end
-        return jobs.take(2)        
+        #return jobs.take(2)
+        #byebug
+
     end
 end

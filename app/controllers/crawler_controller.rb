@@ -3,10 +3,10 @@ class CrawlerController < ApplicationController
     
     def index
         # Do something later
-        url = "https://www.empregos.com.br/vagas"
+        url = "https://www.vagas.com.br/vagas-de-Programador?"
         page = HTTParty.get(url)
        # CrawlerEmpregoJob.perform_now(page)
-        @result = CrawlerEmpregoService.new(page).call
+         CrawlerVagaService.new(page).call
         #byebug
     end
 
