@@ -4,15 +4,7 @@ class CrawlerEmpregoService
     end
 
     def call
-        # doc = Nokogiri::HTML(open(@scrapper.url ))
-        # items = doc.css(".s-item-container")
-        # items.each do |item|
-        #   Product.create!(
-        #       title: item.css(".s-access-title").text.strip,
-        #       price: item.css(".s-price").text.to_d,
-        #       rating: item.css("span+ .a-text-normal").text.to_f)
-        # end     
-           
+      
         parsed_page = Nokogiri::HTML(@page)
         # jobs = Array.new
         job_listings = parsed_page.css('div.descricao')
