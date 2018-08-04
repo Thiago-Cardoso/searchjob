@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
   resources :reports, only: [:index, :create]
   resources :jobs
+  resources :search, only: [:index]
 end

@@ -7,7 +7,7 @@ describe "crawler_service_empregos to empregos.com.br with query 'programador ru
         @page = get_file_as_string("spec/mocks/empregos.html")
         #The variable page have the html content from Empregos.com.br 
         #from query 'programador ruby'
-        @results = CrawlerServiceEmprego.new(@page).crawlerEmpregos
+        @results = CrawlerEmpregoService.new(@page).call
         expect(@results).to eq(
             [
                 {:title=>"Desenvolvedor Ruby", 
