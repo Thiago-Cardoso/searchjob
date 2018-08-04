@@ -11,7 +11,7 @@
 						<p class="light"><strong>Empresa: </strong><%=@job.company %></p>
 						<p class="light"><strong>Cidade: </strong><%=@job.location %></p>
 						<p class="light"><strong>Publicada em: </strong><%=@job.published_at %></p>
-						<p class="light"><strong>WebSite: </strong><%=link_to @job.url %></p>
+						<p class="light"><strong>WebSite: </strong><%=link_to @job.url, @job.url %></p>
 					</div>
 					<div class="card-action">
 						<%=link_to "Visite o site" %>
