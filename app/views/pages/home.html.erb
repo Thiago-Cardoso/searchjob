@@ -10,7 +10,7 @@
 				<div class="nav-wrapper">
 					<%= form_tag search_index_path, method: :get do %>
 						<%= text_field_tag :query, params[:query]  %>
-						<%= submit_tag "Search", name: nil %>
+						<%= submit_tag "search", name: nil %>
 					<% end %>
 				</div>
 			</nav>

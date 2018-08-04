@@ -22,6 +22,7 @@ gem 'material_icons'
 gem 'nokogiri', '~> 1.8', '>= 1.8.4'
 gem 'httparty', '~> 0.13.7'
 gem 'pg_search'
+gem 'whenever'
 
 group :test do
   gem "factory_bot_rails"
