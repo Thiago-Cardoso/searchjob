@@ -1,6 +1,9 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+.pagination li.active a {
+  color: #fff;
+}
 nav {
 	a {
 		color: #3f51b5!important;
@@ -30,6 +33,9 @@ section#search-results {
 	.card-title {
 		font-size:15px;
 		font-weight: bolder;
+	}
+	.card-content {
+		min-height: 180px;
 	}
 }
 section#job-show {

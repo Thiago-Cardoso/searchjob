@@ -12,7 +12,7 @@
 						<div class="input-field">
 						<input placeholder="Digite a sua cidade..." id="search" type="search" required>
 							<%= text_field_tag :query, params[:query], class: "input-field"  %>
-							<label class="label-icon" for="search"><i class="material-icons indigo-text">search</i></label>
+							<label class="label-icon" for="search"><i class="material-icons indigo-text" style="margin:-12px 0 0 10px;;font-size:3rem;">search</i></label>
 						<i class="material-icons indigo-text">close</i>
 						<%= submit_tag "search", name: nil, style: "display: none;" %>
 					<% end %>
