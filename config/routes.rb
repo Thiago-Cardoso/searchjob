@@ -1,5 +1,6 @@
 require 'sidekiq/web'
 Rails.application.routes.draw do
+  get 'search/index'
   get 'reports/index'
   get 'reports/create'
   get 'pages/home'
