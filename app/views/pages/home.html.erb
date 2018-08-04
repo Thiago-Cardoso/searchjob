@@ -9,8 +9,12 @@
 			<nav class="grey lighten-2">
 				<div class="nav-wrapper">
 					<%= form_tag search_index_path, method: :get do %>
-						<%= text_field_tag :query, params[:query]  %>
-						<%= submit_tag "search", name: nil %>
+						<div class="input-field">
+						<input placeholder="Digite a sua cidade..." id="search" type="search" required>
+							<%= text_field_tag :query, params[:query], class: "input-field"  %>
+							<label class="label-icon" for="search"><i class="material-icons indigo-text">search</i></label>
+						<i class="material-icons indigo-text">close</i>
+						<%= submit_tag "search", name: nil, style: "display: none;" %>
 					<% end %>
 				</div>
 			</nav>
@@ -20,6 +24,4 @@
 		</div>
 	</div>
 </section>
-
-
 

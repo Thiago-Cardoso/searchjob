@@ -18,7 +18,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails'
 gem 'materialize-sass', '~> 1.0.0.rc2'
 gem 'material_icons'
-
+gem 'will_paginate', '~> 3.1.0'
 gem 'nokogiri', '~> 1.8', '>= 1.8.4'
 gem 'httparty', '~> 0.13.7'
 gem 'pg_search'
