@@ -1,11 +1,11 @@
 class CrawlerVagaJob < ApplicationJob
   queue_as :vagajob
 
-  def perform(page)
+  def perform(page3)
     # Do something later
      #Do something later
-     @result = CrawlerVagaService.new(page).call
+     CrawlerVagaService.new(page3).call
      #byebug
-     puts @result
+ 
   end
 end

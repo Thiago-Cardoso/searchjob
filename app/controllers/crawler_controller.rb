@@ -2,30 +2,26 @@ class CrawlerController < ApplicationController
     #@result = nil
     
     def index
-        # Do something later
-        #Vagas
-        #url = "https://www.vagas.com.br/vagas-de-Programador?"
-        #page = HTTParty.get(url)
-        # CrawlerEmpregoJob.perform_now(page)
-         #CrawlerVagaService.new(page).call
+ 
+        url3 = "https://www.vagas.com.br/vagas-de-Programador"
+        page3 = HTTParty.get(url3)
+        CrawlerVagaJob.perform_now(page3)
+        CrawlerVagaService.new(page3).call
 
-         #Profissionais
-         #url = "https://empregos.profissionaisti.com.br/?s=Programador"
-         #page = HTTParty.get(url)
-         #CrawlerProfissionaisJob.perform_now(page)
-         #CrawlerProfissionaisService.new(page).call
+         
+        url2 = "https://empregos.profissionaisti.com.br/?s=Programador"
+        page2 = HTTParty.get(url2)
+        CrawlerProfissionaisJob.perform_now(page2)
+        CrawlerProfissionaisService.new(page2).call
 
-          #Empregos
-         #url = "https://www.empregos.com.br/vagas/programador"
-         #page = HTTParty.get(url)
-         #CrawlerEmpregoJob.perform_now(page)
-         #CrawlerEmpregoService.new(page).call
-        #byebug
+
+        url = "https://www.empregos.com.br/vagas/programador"
+        page = HTTParty.get(url)
+        CrawlerEmpregoJob.perform_now(page)
+        CrawlerEmpregoService.new(page).call
+
     end
 
-    #def index(page)
-        # Do something later
-       # @result = CrawlerEmpregoService.new(page).call
-    #end
+
     
 end
